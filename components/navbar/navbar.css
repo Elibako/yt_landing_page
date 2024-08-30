@@ -1,0 +1,109 @@
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo, nav-links, and button */
+  align-items: center; /* Align items vertically */
+  color: #333;
+  padding: 20px 20px; /* Add padding to top and bottom, and horizontal padding for margins */
+  transition: color 0.3s ease;
+  position: fixed;
+  font-family: "Poppins", sans-serif;
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px); /* Adjust width to include side margins */
+  background-color: #FFF;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 100;
+  margin: 0 auto; /* Center the navbar horizontally */
+}
+
+/* Logo styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Centering nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center the nav links horizontally */
+  margin: 0 auto; /* Center the nav links within the available space */
+  padding: 0;
+  gap: 20px; /* Space between links */
+  flex-grow: 1; /* Allow the nav links to take up available space */
+  position: absolute; /* Positioning to center nav links */
+  left: 50%;
+  transform: translateX(-50%); /* Center the nav links horizontally */
+}
+
+/* Styling for nav links */
+.nav-links li {
+  margin: 0; /* Remove margin */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links a:hover {
+  color: #0099FF;
+}
+
+/* Burger menu styling */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto; /* Pushes burger to the right on smaller screens */
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+}
+
+.portfoliobtn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: auto; /* Pushes button to the far right */
+}
+
+/* Button hover effect */
+.portfoliobtn:hover {
+  background-color: #333;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    color: #333;
+    align-items: end;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  /* Hide button in mobile view */
+  .portfoliobtn {
+    display: none;
+  }
+}

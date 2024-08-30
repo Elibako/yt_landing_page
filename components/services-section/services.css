@@ -1,0 +1,82 @@
+body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-left: 40px; /* Moves content to the right */
+  }
+  
+  .services-text {
+    text-align: center;
+    margin-bottom: 40px; /* Increased spacing below the text section */
+  }
+  
+  .services-text h1 {
+    font-size: 36px;
+    margin-bottom: 15px; /* Increased spacing below the heading */
+  }
+  
+  .services-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px; /* Increased spacing below the paragraph */
+  }
+  
+  .services-cards {
+    display: flex;
+    justify-content: center; /* Centers the cards horizontally */
+    margin-top: 40px;
+    gap: 20px; /* Space between cards */
+  }
+  
+  .card {
+    flex: 1;
+    max-width: 300px; /* Limits the card width */
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: none; /* No box-shadow by default */
+    box-sizing: border-box; /* Ensures padding is included in the card's width */
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .card-middle {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Box-shadow for the middle card */
+  }
+  
+  .card-non {
+    background-color: transparent; /* No background color for non-cards */
+    padding: 0;
+    text-align: left; /* Align text to the left for non-cards */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .services-cards {
+      flex-direction: column;
+      align-items: center; /* Centers the cards vertically in column layout */
+    }
+  
+    .card {
+      margin: 20px 0;
+      max-width: 90%; /* Adjusts card width for smaller screens */
+    }
+  }
+  
