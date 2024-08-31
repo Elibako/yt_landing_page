@@ -20,7 +20,7 @@ const Herosection = () => {
             <p>
               Since creative designers often interact with creative teams, managers, and clients, they need strong communication skills.
             </p>
-            <button className='textbtn'>CV here</button>
+            <button>CV here</button>
             <div className="hero-icons">
               <i className="github">
                 <a href="https://github.com/Elibako" target="_blank" rel="noopener noreferrer">

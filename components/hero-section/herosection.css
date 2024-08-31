@@ -34,14 +34,15 @@
     margin-bottom: 20px;
 }
 
-.textbtn {
-    padding: 10px 20px;
+button{
     background-color: rgba(253, 89, 86, 1);
-    color: white;
+    padding: 10px 20px;
+    box-shadow:  rgba(255, 103, 0, 0.08); 
+    transition: box-shadow 0.3s ease; 
     border: none;
+    color: white;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(255, 103, 0, 0.08); /* Added box-shadow */
-    transition: box-shadow 0.3s ease; /* Optional: Smooth transition on hover */
+    transition: box-shadow 0.3s ease; 
 }
 .period{
     margin-left: 20px;
