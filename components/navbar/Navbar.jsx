@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './navbar.css';
 
+
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -31,12 +32,12 @@ const Navbar = () => {
           <img src="src/assets/logo.svg" alt="Logo" />
         </div>
         <ul className={`nav-links ${navActive ? 'active' : ''}`}>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Contributors</a></li>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#contributor">Contributors</a></li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#footer">Contact</a></li>
         </ul>
         <button className='portfoliobtn'>Portfolio Here</button> {/* Button moved here */}
         <div className="burger" onClick={toggleNav}>

@@ -1,13 +1,16 @@
 body {
     font-family: "Poppins", sans-serif;
   }
-  
+  #services{
+    padding: 40px;
+  }
   .services-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     padding-left: 40px; /* Moves content to the right */
   }
+
   
   .services-text {
     text-align: center;

@@ -1,7 +1,9 @@
 body {
     font-family: "Poppins", sans-serif;
   }
-  
+  #portfolio{
+    padding: 40px;
+  }
   .portfolio-container {
     max-width: 1200px;
     margin: 0 auto;

@@ -3,7 +3,8 @@ import './contributor.css';
 
 const Contributor = () => {
   return (
-    <div className="contributor-container">
+   <div id="contributor">
+     <div className="contributor-container">
       <div className="contributor-text">
         <h1>Our Contributors</h1>
         <p>Meet the talented individuals who contribute to our success.</p>
@@ -20,6 +21,7 @@ const Contributor = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 }
 

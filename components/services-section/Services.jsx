@@ -3,7 +3,8 @@ import './services.css';
 
 const Services = () => {
   return (
-    <div className="services-container">
+   <div id="services">
+     <div className="services-container">
       <div className="services-text">
         <h1> Services</h1>
         <p>Our team members are experts in all facets of the design industry including: print design, illustration, branding, identity and more.</p>
@@ -41,6 +42,7 @@ const Services = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 }
 

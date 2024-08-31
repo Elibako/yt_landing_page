@@ -4,13 +4,14 @@ import { BsTwitter, BsInstagram, BsLinkedin, BsFacebook } from 'react-icons/bs';
 
 const Herosection = () => {
   return (
-    <div className="container">
+   <div id="hero">
+     <div className="container">
       <div className="hero">
         <div className="hero-content">
           <div className="text">
             {/* <img src="Waving Hand Emoji.png" alt="Waving hand emoji" /> */}
             <p>Hola, I'm</p>
-            <h4>Justin Vaccaro</h4>
+            <h4 style={{ color: 'rgba(253, 89, 86, 1)', fontSize:'24px'  }}>Justin Vaccaro</h4>
             <h1 class="creative-designer">
   <span className='creative'>  Creative </span><br/><span class="designer">Designer</span> 
   <img src="src/assets/dot.svg" alt=""  className='period'/>
@@ -52,6 +53,7 @@ const Herosection = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 };
 

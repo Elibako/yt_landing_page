@@ -17,6 +17,9 @@ body {
     text-align: center;
     margin-bottom: 20px;
   }
+  #about-me{
+    padding: 40px;
+  }
   
   .about-text h1 {
     font-size: 36px;

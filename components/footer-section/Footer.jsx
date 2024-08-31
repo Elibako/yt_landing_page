@@ -4,7 +4,8 @@ import { BsTwitter, BsInstagram, BsLinkedin, BsFacebook } from 'react-icons/bs';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+   <div id="footer">
+     <footer className="footer">
       <div className="footer-text">
         <h1>Contact.</h1>
         <p>Truth is a deep kindness that teaches us to be content in our everyday life and share with the people the same happiness. the feeling of sunday is the same everywhere: heavy, melancholy, standing still.</p>
@@ -41,6 +42,7 @@ const Footer = () => {
         <p>&copy; 2024 Your Company. All rights reserved.</p>
       </div>
     </footer>
+   </div>
   );
 }
 

@@ -2,7 +2,8 @@ import React from 'react'
 import './aboutme.css'
 const Aboutme = () => {
   return (
-    <div className="about-container">
+ <div id="about-me">
+     <div className="about-container">
     <div className="about-text">
       <h1>About Me</h1>
       <p>
@@ -13,6 +14,7 @@ const Aboutme = () => {
       <img src="src/assets/homie.svg" alt="About Me" />
     </div>
   </div>
+ </div>
   
   )
 }
