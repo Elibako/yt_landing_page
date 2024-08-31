@@ -29,7 +29,7 @@ const Navbar = () => {
     <div className="App">
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="logo">
-          <img src="src/assets/logo.svg" alt="Logo" />
+         <a href="#hero"> <img src="src/assets/logo.svg" alt="Logo" /></a>
         </div>
         <ul className={`nav-links ${navActive ? 'active' : ''}`}>
           <li><a href="#hero">Home</a></li>
