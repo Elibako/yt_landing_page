@@ -40,15 +40,35 @@
 /* Styling for nav links */
 .nav-links li {
   margin: 0; /* Remove margin */
+  position: relative; /* Ensure pseudo-element is positioned relative to the link */
 }
 
 .nav-links a {
   text-decoration: none;
   color: #333;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px; /* Add some space below the link for the line */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgba(253, 89, 86, 1);
+  transition: width 0.3s ease; /* Transition the width for the left-to-right effect */
 }
 
 .nav-links a:hover {
-  color: #0099FF;
+  color: rgba(253, 89, 86, 1); /* Match text color to line color on hover */
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Expand the line to full width on hover */
 }
 
 /* Burger menu styling */
@@ -78,7 +98,7 @@
 
 /* Button hover effect */
 .portfoliobtn:hover {
-  background-color: #333;
+  background-color: rgba(253, 89, 86, 1);
 }
 
 /* Responsive styling */

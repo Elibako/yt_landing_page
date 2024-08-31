@@ -10,9 +10,16 @@
   }
   
   .footer-text {
-    margin-bottom: 20px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    justify-items: center;
   }
   
+.footer-text p{
+    justify-content: center;
+   
+}
   .footer-image img {
     max-width: 100%;
     height: auto;
